@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Resume</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .resume-page {
+            width: 210mm; /* A4 width */
+            min-height: 297mm; /* A4 height */
+            margin: 20px auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px 40px;
+        }
+
+        .header, .section {
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin-bottom: 5px;
+        }
+        .header p {
+            margin: 0;
+        }
+        .section-title {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .experience-item, .project-item {
+            margin-bottom: 15px;
+        }
+        .experience-header, .project-header {
+            display: flex;
+            justify-content: space-between;
+        }
+        .experience-header h3, .project-header h3 {
+            margin: 0;
+        }
+        .details ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+        .details li {
+            margin-bottom: 5px;
+        }
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+        .skills-list li {
+            margin-bottom: 5px;
+        }
+        .skills-category {
+            font-weight: bold;
+        }
+        
+        @media print {
+            body {
+                background: #fff;
+            }
+            .resume-page {
+                box-shadow: none;
+                margin: 0;
+                padding: 20px 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-page">
+    <div class="header">
+        <h1>Dhruv Patel</h1>
+        <p>+1 (949) 823-3739 | dhruv@gmail.com | linkedin.com/in/dhruvpatel</p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="experience-item">
+            <div class="experience-header">
+                <h3>University of California, San Diego</h3>
+                <span>San Diego, CA</span>
+            </div>
+            <p>B.S. Computer Science, Minor in Technology Management — 3.6 GPA <br> exp. June 2025</p>
+            <div class="details">
+                <ul>
+                    <li>Courses: Object-oriented Programming, Data Structures, Algorithm Design & Analysis, Assembly & Machine code.</li>
+                    <li>VP of Product @ VeraDome: supporting 5 student-focused products in their development and launch phases.</li>
+                    <li>Special Events Chair @ Theta: Organized high-attendance alumni events, PD workshops, and retreats.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Relevant Experience</h2>
+        <div class="experience-item">
+            <div class="experience-header">
+                <h3>Software Engineering Intern</h3>
+                <span>May 2025 – Present</span>
+            </div>
+            <p><strong>GeoVision Analytics - Data Science Data Systems</strong> <br> Boulder, CO</p>
+            <div class="details">
+                <ul>
+                    <li>Built a satellite image processing system using React, FastAPI, and AWS, helping reduce client data transfer costs by over $400K annually.</li>
+                    <li>Implemented automated workflows with Apache Airflow to securely move and manage 2+ PB of data across cloud platforms.</li>
+                    <li>Created and published machine learning models for vegetation detection from satellite imagery, supporting the geospatial research community.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="experience-item">
+            <div class="experience-header">
+                <h3>Software Engineer</h3>
+                <span>August 2022 – May 2023</span>
+            </div>
+            <p><strong>Fundhut — fundraising for nonprofits startup</strong> <br> Asheville, NC</p>
+            <div class="details">
+                <ul>
+                    <li>Created a mobile and web fundraising platform for a non-profit, facilitating over $25K in donations from 150+ contributors using React, React Native, and Express.js.</li>
+                    <li>Engineered a C++ transaction module to handle credit card charges and apply fraud-detection rules with low-latency processing (<300ms).</li>
+                    <li>Designed and launched an accessible dashboard for administrators and donors in Figma, improving overall usability.</li>                   
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-list">
+            <p><span class="skills-category">Languages:</span> Javascript, Java, Python, C/C++, SQL (Postgres, MySQL), NoSQL (MongoDB, Datastore), HTML/CSS</p>
+            <p><span class="skills-category">Frameworks:</span> React/Redux, Expo, Node.js (Express, Socket.io), Django, Next.js, jQuery, TailwindCSS, HuggingFace ML</p>
+            <p><span class="skills-category">Developer Tools:</span> Google Cloud Platform (Functions, Compute Engine, Analytics), Amazon Web Services (RDS, DynamoDB, API Gateway), VS Code, PyCharm, Jira (scrum), Heroku, Netlify, Sentry, VMWare, Scale.AI</p>
+            <p><span class="skills-category">Other:</span> Git (CI/CD), Apache, Docker, DNS, Unix, Unit testing, Figma, Slack, Microsoft Office & Adobe CC</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

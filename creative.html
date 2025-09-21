@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Resume</title>
+    <style>
+        :root {
+            --blue-bg: #007bff;
+            --dark-blue-text: #172a5a;
+            --white-text: #ffffff;
+            --grey-text: #6c757d;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .resume-page {
+            width: 210mm; /* A4 width */
+            min-height: 297mm; /* A4 height */
+            margin: 20px auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .left-column {
+            background-color: var(--blue-bg);
+            flex: 1;
+            padding: 40px;
+            color: var(--white-text);
+            position: relative;
+        }
+
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid var(--white-text);
+            margin-bottom: 20px;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .contact-info p {
+            font-size: 0.9em;
+            margin: 5px 0;
+            line-height: 1.4;
+        }
+        
+        .section-title {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item h4 {
+            font-size: 1em;
+            margin: 0;
+        }
+
+        .experience-item p {
+            font-size: 0.9em;
+            margin: 0;
+            font-style: italic;
+        }
+
+        .experience-item ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 5px 0 0;
+            font-size: 0.9em;
+        }
+
+        .right-column {
+            background-color: var(--white-text);
+            flex: 1.5;
+            padding: 40px;
+            color: var(--dark-blue-text);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .right-column .section-title {
+            color: var(--dark-blue-text);
+        }
+
+        .name-container {
+            font-family: 'Georgia', serif;
+            text-transform: uppercase;
+            font-size: 2.5em;
+            line-height: 1;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+
+        .name-container h1, .name-container h2 {
+            margin: 0;
+        }
+
+        .name-container h2 {
+            font-size: 0.5em;
+            font-weight: 400;
+            letter-spacing: 2px;
+            color: var(--grey-text);
+        }
+
+        .right-column .section {
+            margin-top: 30px;
+        }
+
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .skills-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 5px;
+        }
+
+        .skills-list li::before {
+            content: '•';
+            color: var(--blue-bg);
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        /* A4 print settings */
+        @media print {
+            body {
+                background: #fff;
+            }
+            .resume-page {
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-page">
+    <div class="left-column">
+        <div class="profile-photo">
+            <img src="your-image-url.jpg" alt="Profile Photo">
+        </div>
+        
+        <h3 class="section-title">Contact</h3>
+        <div class="contact-info">
+            <p>+123-456-7890</p>
+            <p>hello@reallygreatsite.com</p>
+            <p>www.reallygreatsite.com</p>
+        </div>
+
+        <h3 class="section-title">Professional Skills</h3>
+        <ul class="skills-list">
+            <li>Outstanding communicator - often worked on large teams</li>
+            <li>Expert in Illustrator and CorelDraw</li>
+            <li>Use MS Outlook daily</li>
+            <li>Excellent collaborative and interpersonal abilities – a very strong team player with well-developed written and verbal communication skills</li>
+        </ul>
+        
+        <h3 class="section-title">Certifications</h3>
+        <ul class="skills-list">
+            <li>Certified Graphics Communications Manager (CGCM) – 2020</li>
+            <li>Certified Digital Designer – 2017</li>
+        </ul>
+    </div>
+
+    <div class="right-column">
+        <div class="name-container">
+            <h1>Bara Daniel</h1>
+            <h2>Graphics Department Manager</h2>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">Personal Statement</h3>
+            <p>Resourceful and ardent graphic designer seeking to leverage valued community relations as a Graphics Department Manager. Skilled in conveying client connections to the next level by improving team dynamics and providing excellent results. Boasting 7+ years of open-minded responsibility with progressive clients.</p>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">Professional Experience</h3>
+            <div class="experience-item">
+                <h4>Graphics Department Manager</h4>
+                <p>Warner & Spencer, Any City</p>
+                <ul>
+                    <li>Discussed with clients to confer and decide layout design</li>
+                    <li>Decided the size and arrangement of illustrative material and copy and selected the style and size of type.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h4>Junior Graphic Designer | 2017 – 2020</h4>
+                <p>Wardiere Inc., Any City</p>
+                <ul>
+                    <li>Developed designs, concepts, and sample layouts following the knowledge of layout principles and esthetic design concepts</li>
+                    <li>Maintained an archive of images, photos, and previous work products</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">Education</h3>
+            <p>Bachelor’s Degree in Visual Communications</p>
+            <p>Fauget College of Arts, Any City | Graduated in 2016</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
